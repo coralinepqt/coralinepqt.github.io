@@ -277,25 +277,24 @@ footer p{
 
 @media screen and (max-device-width:  480px) {
     .index{
-        flex-direction: column;
+        position: absolute;
     }
 
     .titre{
         margin: auto ;
-        transform: scale(2.2);
+        transform: scale(1.5);
     }
     
 
     .dessin {
         position: absolute;
         width: 95vw;
-        height: 35vh;
         padding: 0;
     }
 
     .dessin img{
         width: 100%;
         filter: blur(3px);
-        opacity: 0.2;
+        opacity: 0.4;
     }
     }
