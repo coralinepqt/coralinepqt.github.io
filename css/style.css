@@ -275,7 +275,7 @@ footer p{
 
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 300px) {
     .index{
         flex-direction: column;
         
