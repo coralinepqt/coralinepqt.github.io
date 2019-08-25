@@ -269,3 +269,37 @@ footer p{
     justify-content: center;
     height: 100vh;
 }
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .index{
+        flex-direction: column;
+        
+    }
+
+    .titre{
+        margin: auto ;
+    }
+    
+    h1{
+        font-size: 3.5rem;
+    }
+
+    .dessin {
+        position: absolute;
+        margin:0 auto auto auto;
+        width: 50vh;
+        height: 35vh;
+        padding: 0;
+    }
+
+    .dessin img{
+        width: 100%;
+        filter: blur(2px);
+        opacity: 0.5;
+    }
+    }
