@@ -275,30 +275,27 @@ footer p{
 
 
 
-@media handheld {
+@media screen and (max-device-width:  480px) {
     .index{
         flex-direction: column;
     }
 
     .titre{
         margin: auto ;
+        transform: scale(2.2);
     }
     
-    h1{
-        font-size: 3.5rem;
-    }
 
     .dessin {
         position: absolute;
-        margin:0 auto auto auto;
-        width: 50vh;
+        width: 95vw;
         height: 35vh;
         padding: 0;
     }
 
     .dessin img{
         width: 100%;
-        filter: blur(2px);
-        opacity: 0.5;
+        filter: blur(3px);
+        opacity: 0.2;
     }
     }
