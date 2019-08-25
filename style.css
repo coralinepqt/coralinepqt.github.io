@@ -1,0 +1,301 @@
+
+html{
+    font-family: 'Thasadith', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+h2{
+    font-family: 'Amatic SC', cursive;
+    font-weight: 400;
+    font-size: 3rem;
+    background-image: url(images/rectangleJaune.png);
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    display: inline;
+    background-position:left bottom;
+    padding-left: 5%;
+    margin: 0;
+    color: black;
+}
+
+.page3 a{
+    text-decoration: none;
+    font-family: 'Amatic SC', cursive;
+    font-size:4vw;
+    color: black;
+}
+
+.contact a{
+    font-family: 'Thasadith', sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+p{
+    font-weight: 700;
+}
+
+h1{
+    margin: 0;
+    font-size: 3rem;
+}
+
+
+/*******************         ACCUEIL        *******************/
+.menu{
+    position: fixed;
+    z-index: 1;
+}
+
+.index{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    position: relative;
+    margin: 0;
+}
+
+.titre{
+    text-align: center;
+    margin: auto 0 auto 15vw;
+}
+
+.dessin {
+    margin: auto;
+    width: 90vh;
+    height: 75vh;
+    justify-content: space-around;
+    display: flex;
+    padding: 0 5%;
+}
+
+.dessin img{
+    width: 100%;
+    margin:auto ;
+    position: relative;
+}
+
+/********************   MENU  *****************************/
+
+.menu ul{
+    display: none;
+}
+
+.menu img{
+    margin: 2vh;
+    width: 8vh;
+}
+
+
+/*******************   A PROPOS       *************************/
+
+.page2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+}
+
+.presentation{
+    justify-content: space-around;
+    display: flex;
+    width: 50%;
+    margin-bottom: 2vh;
+}
+
+.presentation img{
+    margin: auto;
+    width: 35vw;
+}
+
+.aPropos{
+    margin-bottom: 8vh;
+}
+
+.texte {
+    width: 50%;
+    margin: auto 5% auto 0;
+    text-align: justify;
+    font-weight: 700;
+    justify-content: space-between;
+}
+
+.competences {
+    display: flex;
+    flex-direction: row;
+}
+
+.competences p:not(:nth-child(1)){
+    margin-left: 2vw;
+}
+
+/**********************      PAGE 3      ********************/
+
+.page3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+}
+
+.projets{
+    background-image: url(images/realisations.png);
+    background-repeat: no-repeat;
+    width: 35%;
+    background-size: contain;
+    background-position: center 48%;
+    display: flex;
+    margin: 0 6% 0 9%;
+}
+
+.projets a{
+    margin: auto;
+}
+
+.contact{
+    margin: auto auto auto 10vw;
+    position: relative;
+}
+
+.contact h2{
+    margin-bottom: 20px;
+}
+
+.contact a{
+    display: flex;
+    margin: 5vh 5vh 5vh 0; 
+    align-items: center;
+}
+
+.contact a:nth-of-type(1)::before {
+    content: url(/css/images/instagram-brands.svg); position:relative; 
+    width: 60px;
+    left: -25px;
+}
+
+.contact a:nth-of-type(2)::before{
+    content: url(/css/images/envelope-regular.svg); 
+    position:relative; 
+    width: 60px;
+    left: -25px
+}
+
+.contact a:nth-of-type(3)::before{
+     content: url(/css/images/linkedin-brands.svg);
+    position:relative; 
+    width: 60px;
+    left: -25px;
+}
+
+footer p{
+    text-align: center;
+    margin: 0;
+    font-size: 0.8em;
+}
+
+
+
+
+
+
+
+/*********************       PROJETS         *********************/
+
+.menuProjet ul{
+    display: flex;
+    justify-content: space-around;
+    list-style:none;
+    width: 55%;
+    align-items: center;
+}
+
+.menuProjet a{
+    font-family: 'Amatic SC', cursive;
+    font-weight: 400;
+    font-size: 2rem;
+    display: inline;
+    margin: 0;
+    color: black;
+    text-decoration: none;
+}
+
+.menuProjet li{
+    display: flex;
+}
+
+.menuProjet img{
+    margin: 2vh;
+    width: 8vh;
+}
+
+.menuProjet{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100vw;
+    background-color: white;
+    z-index: 10;
+}
+
+.texteP{
+    width: 50%; 
+    margin: auto auto auto 15vh;
+    justify-content: space-around;
+}
+
+.photoP img{
+    max-height:70vh;
+}
+
+.photoP {
+    justify-content: space-around;
+    display: flex;
+    min-width: 50vw;
+    margin: auto;
+    
+}
+
+.projet{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+
+
+
+
+@media screen and (max-device-width:  480px) {
+    .index{
+        flex-direction: column;
+    }
+
+    .titre{
+        margin: auto ;
+        transform: scale(2.2);
+    }
+    
+
+    .dessin {
+        position: absolute;
+        width: 95vw;
+        height: 35vh;
+        padding: 0;
+    }
+
+    .dessin img{
+        width: 100%;
+        filter: blur(3px);
+        opacity: 0.2;
+    }
+    }
