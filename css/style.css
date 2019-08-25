@@ -275,10 +275,9 @@ footer p{
 
 
 
-@media screen and (max-width: 300px) {
+@media handheld {
     .index{
         flex-direction: column;
-        
     }
 
     .titre{
