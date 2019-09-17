@@ -121,7 +121,6 @@ h1{
 }
 
 .texte {
-    font-family: 'Thasadith', sans-serif;
     width: 40%;
     margin: auto 5% auto 0;
     text-align: justify;
@@ -354,12 +353,6 @@ footer p{
 
 /***********************           TELEPHONE            ***************************/
 @media screen and (max-device-width:  480px)  {
-    
-    html{
-        font-family: 'Thasadith', sans-serif;
-    }
-    
-    
     .titre{
         margin: auto ;
         z-index: 10;
@@ -412,7 +405,6 @@ footer p{
         margin: 0 auto;
         font-size: 2rem;
         text-align: center;
-        font-family: 'Thasadith', sans-serif;
     }
     
     .texte p{
@@ -493,7 +485,6 @@ footer p{
     
     footer p{
         font-size: 2.5rem;
-        font-family: 'Thasadith', sans-serif;
     }
     
     
