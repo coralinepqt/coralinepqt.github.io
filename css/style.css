@@ -559,7 +559,7 @@ footer p{
 
     .projet{
         flex-direction: column-reverse;
-        margin:  0 10vw ;
+        margin:  0 10vw 10vh ;
         padding-top: 10vh;
         height: auto;
         text-align: center;
@@ -567,7 +567,7 @@ footer p{
     }
     
     .projet .annexe{
-        font-size: 5rem;
+        font-size: 4rem;
         
     }
     
