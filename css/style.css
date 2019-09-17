@@ -59,6 +59,12 @@ h1{
     margin: 0 35%;
 }
 
+footer{
+        background-color: white;
+        box-shadow: 0px -5px 20px grey;
+        height: 7vh;
+    }
+
 
 /*******************         ACCUEIL        *******************/
 
@@ -225,6 +231,7 @@ footer p{
     text-align: center;
     margin: 0;
     font-size: 0.8em;
+    padding: 2.4vh;
 }
 
 .reseauxTel{
@@ -356,12 +363,22 @@ footer p{
     .titre{
         margin: auto ;
         z-index: 10;
-        
     }
     
     #index{
     background-image: url(/css/images/fondTel.png);
         height: 100vh;
+    }
+    
+    footer{
+        background-color: white;
+        box-shadow: 0px -5px 20px grey;
+        height: 7vh;
+        text-align: center;
+        justify-content: center;
+        vertical-align: middle;
+        align-content: center;
+        align-items:center;
     }
     
     .titre h1{
@@ -485,6 +502,7 @@ footer p{
     
     footer p{
         font-size: 2.5rem;
+        padding: 1.8vh;
     }
     
     
@@ -498,6 +516,9 @@ footer p{
         justify-content: space-around;
         width: 100%;
         height: 7vh;
+        padding: 0;
+        box-shadow: 0px 1px 20px grey;
+        margin-top: 0;
         
     }
 
@@ -514,18 +535,20 @@ footer p{
     .texteP{
     width: 80vw; 
     margin: 0;
+    font-size: 2rem;
     justify-content: space-around;
 }
 
     .photoP img{
-        max-width: 80%;
+        width: 100%;
         align-items: center;
+        max-width: 100%;
     }
 
     .photoP {
         flex-direction: column;
-        min-width: 80%;
-        margin: 0 auto;
+        margin: 3vh auto;
+        min-width: 80vw;
     }
 
     .photoP img{
@@ -537,8 +560,15 @@ footer p{
         margin:  0 10vw ;
         padding-top: 10vh;
         height: auto;
+        text-align: center;
         
     }
+    
+    .projet .annexe{
+        font-size: 5rem;
+        
+    }
+    
     
     }
 
