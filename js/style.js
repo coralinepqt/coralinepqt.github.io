@@ -5,11 +5,7 @@
     function initialiser(evt){
     //    $('.bande').addClass('play');
         let menu = $(".navProjet a");
-        menu.click(select);
-        
-        let menu1 = $(".infographie");
-        menu1.trigger("click");
- 
+        menu.click(select); 
 
     function select(evt){        
         let menuPreced= $(".navProjet a");

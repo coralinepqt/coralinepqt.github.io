@@ -2,10 +2,20 @@
 html{
     font-family: 'Thasadith', sans-serif;
     scroll-behavior: smooth;
+    max-width: 100vw;
+    box-sizing: 
+    
 }
 
 body{
     margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    width: 100%;
+}
+
+main{
+    overflow: hidden;
 }
 
 h2{
@@ -20,6 +30,7 @@ h2{
     padding-left: 5%;
     margin: 0;
     color: black;
+    text-align: center;
 }
 
 .page3 a{
@@ -44,23 +55,26 @@ h1{
     font-size: 3rem;
 }
 
-
-/*******************         ACCUEIL        *******************/
-.menu{
-    position: fixed;
-    z-index: 1;
+.texte .annexe{
+    font-size: 2rem;
+    padding: 0 3%;
+    position: relative;
+    margin: 0 35%;
 }
 
-.index{
-    background-color: white;
+
+/*******************         ACCUEIL        *******************/
+
+
+#index{
+    background-image: url(/css/images/fond1.png);
+    background-position: center;
+    background-size: cover;
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
-    width: 100vw;
-    z-index: 2;
     position: relative;
     margin: 0;
+    overflow: hidden;
 }
 
 .titre{
@@ -90,6 +104,7 @@ h1{
     flex-direction: row;
     justify-content: center;
     height: 100vh;
+    overflow: hidden;
 }
 
 .presentation{
@@ -109,7 +124,7 @@ h1{
 }
 
 .texte {
-    width: 50%;
+    width: 40%;
     margin: auto 5% auto 0;
     text-align: justify;
     font-weight: 700;
@@ -125,12 +140,29 @@ h1{
     margin-left: 2vw;
 }
 
-.texte .annexe{
-    font-size: 2rem;
+
+
+
+.annexe{
+    font-family: 'Amatic SC', cursive;
+    font-weight: 400;
+    font-size: 1.5rem;
+    background-image: url(/css/images/rectangleGris.png);
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position:right bottom;
     padding: 0 3%;
-    position: relative;
-    margin: 0 35%;
+    margin: 0 10vw;
+    color: black;
+    border: none;
+    background-color: white;
+    text-decoration: none;
 }
+
+.annexeTel{
+    display: none;
+}
+
 
 /**********************      PAGE 3      ********************/
 
@@ -140,10 +172,11 @@ h1{
     justify-content: center;
     height: 100vh;
     display: flex;
+    overflow: hidden;
 }
 
 .projets{
-    background-image: url(images/realisations.png);
+    background-image: url(/css/images/realisations.png);
     background-repeat: no-repeat;
     width: 35%;
     background-size: contain;
@@ -171,20 +204,20 @@ h1{
     align-items: center;
 }
 
-.contact a:nth-of-type(3)::before {
+.reseaux a:nth-of-type(3)::before {
     content: url(/css/images/instagram-brands.svg); position:relative; 
     width: 60px;
     left: -25px;
 }
 
-.contact a:nth-of-type(1)::before{
+.reseaux a:nth-of-type(1)::before{
     content: url(/css/images/envelope-regular.svg); 
     position:relative; 
     width: 60px;
     left: -25px
 }
 
-.contact a:nth-of-type(2)::before{
+.reseaux a:nth-of-type(2)::before{
     content: url(/css/images/linkedin-brands.svg);
     position:relative; 
     width: 60px;
@@ -197,7 +230,9 @@ footer p{
     font-size: 0.8em;
 }
 
-
+.reseauxTel{
+    display: none;
+}
 
 
 
@@ -205,8 +240,9 @@ footer p{
 
 /*********************       PROJETS         *********************/
 
+
 .select{
-    background-image: url(images/rectangleJaune.png);
+    background-image: url(/css/images/rectangleJaune.png);
     background-size: 50% 50%;
     background-repeat: no-repeat;
     background-position:left bottom;
@@ -214,11 +250,13 @@ footer p{
     margin: 0;
 }
 
-.annexe{
+
+
+.projet .annexe{
     font-family: 'Amatic SC', cursive;
     font-weight: 400;
     font-size: 1.5rem;
-    background-image: url(images/rectangleBleu.png);
+    background-image: url(/css/images/rectangleRouille.png);
     background-size: 50% 50%;
     background-repeat: no-repeat;
     background-position:right bottom;
@@ -296,6 +334,10 @@ footer p{
     filter:grayscale(100%) opacity(50%);
 }
 
+#webDesign .photoP img{
+    border: solid black 1px;
+}
+
 .photoP img:hover{
     filter: none;
 }
@@ -315,25 +357,34 @@ footer p{
 @media screen and (max-device-width:  480px)  {
     .titre{
         margin: auto ;
-        transform: scale(1.5);
+        z-index: 10;
+        
+    }
+    
+    #index{
+    background-image: url(/css/images/fondTel.png);
+    }
+    
+    .titre h1{
+        font-size: 6rem;
+    }
+    
+    .titre h2{
+        font-size: 7rem;
     }
     
 
     .dessin {
-        position: absolute;
-        width: 95vw;
-        padding: 0;
-    }
-
-    .dessin img{
-        width: 100%;
-        filter: blur(3px);
-        opacity: 0.4;
+        display: none;
     }
     
+    
+    h2{
+        font-size: 7rem;
+    }
     
     .page2{
-        flex-direction: column;
+        flex-direction: column-reverse;
         height: auto;
     }
     
@@ -342,8 +393,8 @@ footer p{
     }
 
     .presentation img{
-        margin: auto auto auto auto;
-        width: 65vw;
+        margin:auto;
+        width: 80vw;
     }
 
     .aPropos{
@@ -351,50 +402,95 @@ footer p{
     }
 
     .texte {
-        width: 80%;
+        width: 85%;
         margin: 0 auto;
         font-size: 2rem;
+        text-align: center;
+    }
+    
+    .texte p{
+        text-align: justify;
+    }
+    
+    .texte .annexe{
+        display: none;
+    }
+    
+    .annexeTel{
+        display: block;
+        font-family: 'Amatic SC', cursive;
+        font-weight: 400;
+        font-size: 6rem;
+        background-image: url(/css/images/rectangleGris.png);
+        background-size: 50% 50%;
+        background-repeat: no-repeat;
+        background-position:right bottom;
+        padding: 0 3%;
+        margin: auto;
+        width: 30%;
+        color: black;
+        border: none;
+        background-color: white;
+        text-decoration: none;
+        text-align: center;
     }
     
     .page3{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
     }
 
     .projets{
-        width: 80%;
-    }
+        background-image: url(/css/images/realisations.png);
+        background-repeat: no-repeat;
+        width: 100%;
+        margin: 10vh auto 2vh auto;
+        height: 40vh
+        
+}
 
     .projets a{
-        margin: auto ;
-        padding: 210px;
-        font-size: 4rem;
+        margin: auto;
+        align-items: center;
+        font-size: 5rem;
     }
     
     .contact{
-        justify-content: center;
-        margin-top: 4vh
+        text-align: center;
+        margin-top: 4vh;
+        width: 80%;
+        
         
     }
     .contact a{
-        margin: 4vw 2.5vw;
-        position: relative;
+        width: 80%;
+        justify-content: space-around;
+        margin: 4vh 0;
+        
     }
-
     
     .reseaux{
-        display: flex;
-    }
-
-    h2{
-        font-size: 4rem;
+        display: none;
     }
     
+    .reseauxTel{
+        display: flex;
+    }
+    
+    .reseauxTel i{
+        font-size: 8rem;
+    }
+    
+    
+    .footer p{
+        font-size: 5rem;
+    }
+    
+    
 
-/************     PROJETS      ***************/
+/************     PROJETS TELEPHONE      ***************/
     .logo{
         display: none
     }
