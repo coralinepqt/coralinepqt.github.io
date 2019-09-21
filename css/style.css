@@ -456,7 +456,7 @@ footer p{
         display: block;
         font-family: 'Amatic SC', cursive;
         font-weight: 400;
-        font-size: 6rem;
+        font-size: 5rem;
         background-image: url(/css/images/rectangleGris.png);
         background-size: 50% 50%;
         background-repeat: no-repeat;
@@ -482,15 +482,15 @@ footer p{
         background-image: url(/css/images/realisations.png);
         background-repeat: no-repeat;
         width: 100%;
-        margin: 10vh auto 2vh auto;
-        height: 40vh
+        margin: 8vh auto 2vh auto;
+        height: 46vh;
         
 }
 
     .projets a{
         margin: auto;
         align-items: center;
-        font-size: 5rem;
+        font-size: 6rem;
     }
     
     .contact{
@@ -584,7 +584,6 @@ footer p{
     .projet .annexe{
         font-size: 4rem;
     }
-    
     
     
     
