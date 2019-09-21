@@ -557,6 +557,7 @@ footer p{
     margin: 0;
     font-size: 2rem;
     justify-content: space-around;
+        z-index: 1;
 }
 
     .photoP img{
@@ -571,9 +572,6 @@ footer p{
         min-width: 80vw;
     }
 
-    .photoP img{
-        filter:none;
-    }
 
     .projet{
         flex-direction: column-reverse;
@@ -582,6 +580,12 @@ footer p{
         height: auto;
         text-align: center;
     }
+    
+    .projet .annexe{
+        font-size: 4rem;
+    }
+    
+    
     
     
     }
