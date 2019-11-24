@@ -69,7 +69,7 @@ footer{
 
 
 #index{
-    background-image: url(/css/images/fond1.png);
+    background-image: url(/css/images/fond1.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -197,7 +197,7 @@ footer{
 }
 
 .projets{
-    background-image: url(/css/images/realisations.png);
+    background-image: url(/css/images/realisations.jpg);
     background-repeat: no-repeat;
     width: 35%;
     background-size: contain;
@@ -386,7 +386,7 @@ footer p{
     }
     
     #index{
-    background-image: url(/css/images/fondTel.png);
+    background-image: url(/css/images/fondTel.jpg);
         height: 100vh;
     }
     
@@ -479,7 +479,7 @@ footer p{
     }
 
     .projets{
-        background-image: url(/css/images/realisations.png);
+        background-image: url(/css/images/realisations.jpg);
         background-repeat: no-repeat;
         width: 100%;
         margin: 8vh auto 2vh auto;
